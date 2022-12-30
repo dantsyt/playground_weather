@@ -9,7 +9,7 @@ wForm.addEventListener('submit', (event) => {
     msg_one.textContent = 'Loading...';
     msg_two.textContent = '';
 
-    fetch(`http://localhost:3000/weather?address=${input.value}`)
+    fetch(`/weather?address=${input.value}`)
         .then((response) => {
             response.json()
                 .then((data) => {
