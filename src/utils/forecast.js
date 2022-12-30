@@ -14,7 +14,8 @@ const forecast = (longitude, latitude, callback) => {
                 description: body.current.weather_descriptions[0],
                 location_name: body.location.name,
                 location_country: body.location.country,
-                humidity: body.current.humidity
+                humidity: body.current.humidity,
+                wIcon: body.current.weather_icons[0]
             });
         };
     });
