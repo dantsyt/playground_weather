@@ -13,7 +13,8 @@ const forecast = (longitude, latitude, callback) => {
                 feelslike: body.current.feelslike,
                 description: body.current.weather_descriptions[0],
                 location_name: body.location.name,
-                location_country: body.location.country
+                location_country: body.location.country,
+                humidity: body.current.humidity
             });
         };
     });

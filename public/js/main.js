@@ -17,7 +17,7 @@ wForm.addEventListener('submit', (event) => {
                         return msg_one.textContent = data.error;
                     };
                     msg_one.textContent = data.geoData.location;
-                    msg_two.textContent = `The weather in ${data.weatherData.location_name} is ${data.weatherData.description}.\nIt is currently ${data.weatherData.temperature}` + "\u2103" + ` and it feels like ${data.weatherData.feelslike}` + "\u2103" + '.';
+                    msg_two.textContent = `The weather in ${data.weatherData.location_name} is ${data.weatherData.description}.\nIt is currently ${data.weatherData.temperature}` + "\u2103" + ` and it feels like ${data.weatherData.feelslike}` + "\u2103" + `. Humidity level is ${data.weatherData.humidity}%.`;
                 });
         });
 });
